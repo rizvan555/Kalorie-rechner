@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Kalorien rechner</h1>
+    </header>
+    <main>
+      <form id="main-container" onsubmit="return false">
+        <div class="height">
+          <label for="height-inpu" class="height-input-label"
+            >Körpergröße</label
+          >
+          <input type="text" class="height-input" />
+        </div>
+
+        <div class="age">
+          <label for="age-input" class="age-input-label">Alter</label>
+          <input type="number" class="age-input" />
+        </div>
+
+        <div class="weight">
+          <label for="weight-input" class="weight-input-label">Gewicht</label>
+          <input type="text" class="weight-input" />
+        </div>
+
+        <div class="physique">
+          <h4>Körperbau</h4>
+          <div class="woman-box">
+            <input type="radio" name="physique-radio" class="woman-input" />
+            <label for="woman-input">Weiblich</label>
+          </div>
+          <div class="man-box">
+            <input type="radio" class="man-input" name="physique-radio" />
+            <label for="man-input">Männlich</label>
+          </div>
+        </div>
+
+        <div class="leisure-activity">
+          <label for="leisure-activity" class="leisure-activity-label">Arbeite- und Freizeitaktivität</label>
+          <select
+            name=""
+            id="leisure-input"
+            placeholder="Nur sitzend oder liegend"
+          >
+            <option value="sleeping">Schlafen</option>
+            <option value="sedentary">Nur Sitzen oder Liegen</option>
+            <option value="low">
+              Ausschließlich sitzende Tätigkeit mit wenig oder keiner
+              körperlichen Aktivität in der Freizeit, z.B. Büroarbeit
+            </option>
+            <option value="moderate">
+              Sitzende Tätigkeit mit zeitweilig gehender oder stehender
+              Tätigkeit, z.B. Studierende, Fließbandarbeiter, Laboranten,
+              Kraftfahrer
+            </option>
+            <option value="high">
+              Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer,
+              Kellner, Handwerker, Mechaniker, Hausfrauen
+            </option>
+            <option value="very-high">
+              Körperlich anstrengende berufliche Arbeit
+            </option>
+          </select>
+        </div>
+        <button onclick="checkCalory()">Submit</button>
+        <table>
+          <tr>
+            <th></th>
+            <th>kcal</th>
+            <th>kJ</th>
+          </tr>
+          <tr>
+            <td>Grundumsatz</td>
+            <td id="basic-calories">0,00</td>
+            <td id="basic-kj">0,00</td>
+          </tr>
+          <tr>
+            <td>Gesamtumsatz</td>
+            <td id="total-calories">0,00</td>
+            <td id="total-kj">0,00</td>
+          </tr>
+        </table>
+      </form>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

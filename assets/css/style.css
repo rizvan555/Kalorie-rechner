@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 200px;
+  color: #324761;
+  font-size: 16px;
+
+}
+main {
+  width: 30vw;
+  background-color: #e5eef7;
+  padding: 10px;
+}
+#main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  background-color: #a8bed6;
+  padding: 20px 10px;
+  border-radius: 5px;
+}
+.height {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  margin-bottom: 3vh;
+}
+.age {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  margin-bottom: 3vh;
+}
+.weight {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  margin-bottom: 3vh;
+}
+.physique {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  margin-bottom: 3vh;
+}
+.woman-box,
+.man-box {
+  display: flex;
+  gap: 1vw;
+  color: #000;
+  font-size: 0.8rem;
+}
+.leisure-activity {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  margin-bottom: 3vh;
+}
+.height-input-label,
+.age-input-label,
+.weight-input-label,
+.leisure-activity-label,
+h4 {
+  margin-bottom: 1vh;
+}
+select {
+  border-radius: 6px;
+}
+button {
+  margin: 1vh 0 1vh 18vw;
+  width: 6vw;
+  padding: 5px;
+  background-color: #97601a;
+  color: #fff;
+  border-radius: 5px;
+}
+table {
+  width: 25vw;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+table,
+td {
+  text-align: center;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+th {
+  background-color: #2b78aa;
+  color: #fff;
+  text-align: start;
+}
