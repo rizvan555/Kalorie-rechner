@@ -99,3 +99,9 @@ th {
   color: #fff;
   text-align: start;
 }
+p {
+  margin-top: 1vh;
+  width: 25vw;
+  font-size: 0.7rem;
+  color: #000;
+}

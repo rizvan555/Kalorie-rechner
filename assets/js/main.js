@@ -9,37 +9,37 @@ const checkCalory = () => {
   const basicCaloriesKj = document.querySelector("#basic-kj");
   const totalCaloriesKJ = document.querySelector("#total-kj");
 
-  let checkBasicMetobol;
+  let calculateBasicMetabolism;
 
   if (womanInput) {
-    checkBasicMetobol =
+    calculateBasicMetabolism =
       655.1 + 9.6 * weightInput + 1.8 * heightInput - 4.7 * ageInput;
   } else {
-    checkBasicMetobol =
+    calculateBasicMetabolism =
       664.7 + 13.7 * weightInput + 5 * heightInput - 6.8 * ageInput;
   }
 
   let palFactor;
   if (leisureInput == "sleeping") {
-    palFactor = "0.95";
+    palFactor = 0.95;
   } else if (leisureInput == "sedentary") {
-    palFactor = "1.2";
+    palFactor = 1.2;
   } else if (leisureInput == "low") {
-    palFactor = "1.5";
+    palFactor = 1.5;
   } else if (leisureInput == "moderate") {
-    palFactor = "1.7";
+    palFactor = 1.7;
   } else if (leisureInput == "high") {
-    palFactor = "1.9";
+    palFactor = 1.9;
   } else if (leisureInput == "very-high") {
-    palFactor = "2.2";
+    palFactor = 2.2;
   }
 
-  const checkTotalMetobol = checkBasicMetobol * Number(palFactor);
-  const checkTotalKj = checkBasicMetobol * 4.1868 * Number(palFactor);
+  const checkTotalMetobolism = calculateBasicMetabolism * Number(palFactor);
+  const checkTotalKj = checkTotalMetobolism * 4.1868;
 
-  basicCaloriesKj.textContent = (checkBasicMetobol * 4.1868).toFixed(2);
+  basicCaloriesOutput.textContent = calculateBasicMetabolism.toFixed(2);
+  basicCaloriesKj.textContent = (calculateBasicMetabolism * 4.1868).toFixed(2);
+
+  totalCaloriesOutput.textContent = checkTotalMetobolism.toFixed(2);
   totalCaloriesKJ.textContent = checkTotalKj.toFixed(2);
-
-  basicCaloriesOutput.textContent = checkBasicMetobol.toFixed(2);
-  totalCaloriesOutput.textContent = checkTotalMetobol.toFixed(2);
 };
