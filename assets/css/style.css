@@ -31,38 +31,38 @@ header {
   display: flex;
   flex-direction: column;
   width: 25vw;
-  margin-bottom: 3vh;
+  margin-bottom: 2vh;
 }
 .age {
   display: flex;
   flex-direction: column;
   width: 25vw;
-  margin-bottom: 3vh;
+  margin-bottom: 2vh;
 }
 .weight {
   display: flex;
   flex-direction: column;
   width: 25vw;
-  margin-bottom: 3vh;
+  margin-bottom: 2vh;
 }
 .physique {
   display: flex;
   flex-direction: column;
   width: 25vw;
-  margin-bottom: 3vh;
+  margin-bottom: 2vh;
 }
 .woman-box,
 .man-box {
   display: flex;
   gap: 1vw;
   color: #000;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 .leisure-activity {
   display: flex;
   flex-direction: column;
   width: 25vw;
-  margin-bottom: 3vh;
+  margin-bottom: 2vh;
 }
 .height-input-label,
 .age-input-label,
