@@ -17,21 +17,7 @@ const checkCalory = () => {
     calculateBasicMetabolism =
       664.7 + 13.7 * weightInput + 5 * heightInput - 6.8 * ageInput;
   }
-  let palFactor;
-  if (leisureInput == "sleeping") {
-    palFactor = 0.95;
-  } else if (leisureInput == "sedentary") {
-    palFactor = 1.2;
-  } else if (leisureInput == "low") {
-    palFactor = 1.5;
-  } else if (leisureInput == "moderate") {
-    palFactor = 1.7;
-  } else if (leisureInput == "high") {
-    palFactor = 1.9;
-  } else if (leisureInput == "very-high") {
-    palFactor = 2.2;
-  }
-  const checkTotalMetobolism = calculateBasicMetabolism * Number(palFactor);
+  const checkTotalMetobolism = calculateBasicMetabolism * Number(leisureInput);
   const checkTotalKj = checkTotalMetobolism * 4.1868;
   basicCaloriesOutput.textContent = calculateBasicMetabolism.toFixed(2);
   basicCaloriesKj.textContent = (calculateBasicMetabolism * 4.1868).toFixed(2);
